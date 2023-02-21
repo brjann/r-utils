@@ -4,9 +4,9 @@ table.decimals <- function(v, d=2){
 
 table.format3p <- function(v, add.equals = T){
   if (round(v, 3) == 0){
-    return ("< .001")
+    return ("<.001")
   }
-  return (paste0(ifelse(add.equals, "= ", ""), substring(table.decimals(v, 3), 2)))
+  return (paste0(ifelse(add.equals, "=", ""), substring(table.decimals(v, 3), 2)))
 }
 
 table.pstars <- function(p, p.10 = FALSE){
