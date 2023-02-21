@@ -1,5 +1,5 @@
 table.decimals <- function(v, d=2){
-  format(v, nsmall = d, digits = 0, scientific = F)
+  format(v, nsmall = d, digits = d, scientific = F)
 }
 
 table.format3p <- function(v, add.equals = T){
